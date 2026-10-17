@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Título que aparece en la pestaña del navegador -->
+        <title>Academia Deportiva</title>
+        <!-- Codificación de caracteres: necesaria para ver bien las tildes y la ñ -->
+        <meta charset="UTF-8"/>
+        <!-- Hace que el sitio se adapte al ancho de la pantalla -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Descripción del sitio que muestran los buscadores en sus resultados -->
+        <meta name="description" content="Academia Deportiva Racing Club: formación en fútbol, tenis, natación y boxeo para todas las edades.">
+    </head>
+
+    <body>
+        
+        <!-- Encabezado: título, escudo y menú de navegación -->
+        <header>
+            <h1>Academia Deportiva Racing Club</h1>
+            <img src="img/escudo1.webp" alt="Academia Deportiva Racing Club" width="300" height="220">
+            
+            <!-- Menú principal. Las rutas parten desde la raíz, por eso las páginas llevan pages/ -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="pages/quienes-somos.html">
+                            Quiénes Somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/clubes.html">
+                            Clubes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                </ul>
+            </nav> 
+        </header>
+       
+        <main>
+            <!-- Video de entrenamiento de fútbol -->
+            <div>
+                <video controls width="400">
+                    <source src="assets/entrenamiento-futbol.mp4" type="video/mp4" />
+                    Tu navegador no puede reproducir este video de entrenamiento de fútbol.
+                </video>
+            </div>
+
+            <!-- Mapa de ubicación. El sandbox limita lo que puede hacer el contenido incrustado -->
+            <div>
+                <iframe
+                    src="https://www.google.com/maps?q=-34.6689379,-58.3703633&output=embed" 
+                    sandbox="allow-scripts allow-same-origin"
+                    title="Ubicación de la Academia Deportiva Racing Club"
+                    width="250" 
+                    height="200">
+                </iframe>
+            </div>
+        </main>
+
+        <!-- Pie de página: derechos, autoría y link para volver al inicio -->
+        <footer>
+            <p>Academia Deportiva Racing Club - Todos los derechos reservados</p>
+            <p>Sitio realizado por Rafael Brianni</p>
+            <p><a href="../index.html">Volver al inicio</a></p>
+        </footer>
+
+    </body>
+</html>

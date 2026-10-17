@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Título que aparece en la pestaña del navegador -->
+        <title>Contacto</title>
+        <!-- Codificación de caracteres: necesaria para ver bien las tildes y la ñ -->
+        <meta charset="UTF-8"/>
+        <!-- Hace que el sitio se adapte al ancho de la pantalla -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- Encabezado: menú de navegación y título del sitio -->
+        <header>
+            <!-- Menú principal. Se usa ../ para subir un nivel hasta el index -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="quienes-somos.html">
+                            Quiénes Somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="clubes.html">
+                             Clubes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">
+                          Contacto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                             Inicio
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+                <h1>Academia Deportiva Racing Club</h1>
+        </header>
+        
+        <main>
+            <!-- Datos de contacto -->
+            <h2>Cómo contactarnos:</h2>
+            <ul>
+                <li>Teléfono: +54 11 2763-5921</li>
+                <li>Email: rafabriani317@gmail.com</li>
+            </ul>
+
+            <!-- Formulario de contacto. Nombre y email son obligatorios (required) -->
+            <h2>Formulario de contacto</h2>
+            
+            <form>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required />
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required />
+                </p>
+
+                <!-- Lista para elegir el club de interés -->
+                <p>
+                    <label for="club">¿A qué club te querés inscribir?</label>
+                    <select id="club">
+                        <option value="futbol">Fútbol</option>
+                        <option value="tenis">Tenis</option>
+                        <option value="natacion">Natación</option>
+                        <option value="boxeo">Boxeo</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label><br />
+                    <textarea id="mensaje" rows="5" cols="30"></textarea>
+                </p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <!-- Pie de página: derechos, autoría y link para volver al inicio -->
+        <footer>
+            <p>Academia Deportiva Racing Club - Todos los derechos reservados</p>
+            <p>Sitio realizado por Rafael Brianni</p>
+            <p><a href="index.html">Volver al inicio</a></p>
+        </footer>
+
+    </body>
+
+</html>
